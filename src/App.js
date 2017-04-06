@@ -6,8 +6,27 @@ import MarkdownOutput from './MarkdownOutput';
 class App extends Component {
   constructor(props) {
     super(props);
+    const starterText = `# This is a heading
+## This is a sub-heading
+### This is heading 3
+
+**Bold this**
+*Italicize this*
+
+Two breaks for a newline!
+
+Want to go to [Google.com](http://www.google.com)?
+
+Shopping list
+* Apples
+* Oranges
+* Bananas
+
+To-Do List
+1. This first
+2. That second`;
     this.state = {
-      text: ''
+      text: starterText
     };
     this.changeText = this.changeText.bind(this);
     this.renderMarkdown = this.renderMarkdown.bind(this);
