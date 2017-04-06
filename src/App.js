@@ -6,7 +6,8 @@ import MarkdownOutput from './MarkdownOutput';
 class App extends Component {
   constructor(props) {
     super(props);
-    const starterText = `# This is a heading
+    const starterText = localStorage.getItem('text') || 
+    `# This is a heading
 ## This is a sub-heading
 ### This is heading 3
 
@@ -25,6 +26,7 @@ Shopping list
 To-Do List
 1. This first
 2. That second`;
+
     this.state = {
       text: starterText
     };
@@ -33,6 +35,7 @@ To-Do List
   }
 
   changeText (newText) {
+    localStorage.setItem('text', newText);
     this.setState({ text: newText });
   }
 
