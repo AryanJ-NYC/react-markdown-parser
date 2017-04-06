@@ -49,7 +49,7 @@ To-Do List
   render() {
     return (
       <div>
-        <h1 className="text-center">Mardown Parser</h1>
+        <h1 className="text-center">Markdown Parser</h1>
         <MarkdownInput value={this.state.text} onChange={(text) => this.changeText(text)} />
         <MarkdownOutput value={this.renderMarkdown()} />
       </div>
