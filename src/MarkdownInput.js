@@ -3,8 +3,7 @@ import React, { Component } from 'react';
 class MarkdownInput extends Component {
   render() {
     const styles = {
-      height: '70%',
-      'margin-top': '2%'
+      height: '90%'
     };
     return (
       <textarea
